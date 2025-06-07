@@ -5,18 +5,18 @@ import java.util.Arrays;
 public class ArrayChallenges {
 	
 	public static void rotateArray(int[] arr, int k) {
-		int[] firstSubString = Arrays.copyOfRange(arr, 0, k);
-		int[] secondSubString = Arrays.copyOfRange(arr, k, arr.length);
-		
-		System.arraycopy(secondSubString, 0, arr, 0, secondSubString.length);
-		System.arraycopy(firstSubString, 0, arr, secondSubString.length, firstSubString.length);
-		
-//		k = k % arr.length;
-//		if(k < 0) k += arr.length;
+//		int[] firstSubString = Arrays.copyOfRange(arr, 0, k);
+//		int[] secondSubString = Arrays.copyOfRange(arr, k, arr.length);
 //		
-//		reverseArray(arr, 0, arr.length - 1);
-//		reverseArray(arr, 0, k - 1);
-//		reverseArray(arr, k , arr.length - 1);
+//		System.arraycopy(secondSubString, 0, arr, 0, secondSubString.length);
+//		System.arraycopy(firstSubString, 0, arr, secondSubString.length, firstSubString.length);
+		
+		k = k % arr.length;
+		if(k < 0) k += arr.length;
+		
+		reverseArray(arr, 0, arr.length - 1);
+		reverseArray(arr, 0, k - 1);
+		reverseArray(arr, k , arr.length - 1);
 		
 	}
 	
