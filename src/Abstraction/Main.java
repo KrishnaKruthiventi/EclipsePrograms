@@ -35,6 +35,7 @@ public class Main {
 		Duck duck = new Duck();
 		duck.fly();
 		duck.swim();
+		duck.walk();
 		duck.quack();
 		
 		Flyable flyingObject = duck;
