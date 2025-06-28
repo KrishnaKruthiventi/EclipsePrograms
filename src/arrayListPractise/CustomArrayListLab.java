@@ -13,6 +13,7 @@ public class CustomArrayListLab {
 		students.add(new Student("Bob", 22));
 		students.add(new Student("Charlie", 19));
 		
+		System.out.println(students);
 		System.out.println("Original list: ");
 		students.forEach(System.out::println);
 		
@@ -23,6 +24,7 @@ public class CustomArrayListLab {
 		students.sort(Comparator.comparing(s -> s.name));
 		System.out.println("\nSorted by name:");
 		students.forEach(System.out::println);
+		
 	}
 
 }
