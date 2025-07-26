@@ -2,13 +2,13 @@ package arraysPractise;
 
 import java.util.Arrays;
 
-public class InterviewPuzzle {
+public class SquareTheSortedArray {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int[] input = {-10, -5, 1, 2, 3, 4, 5};
-		int[] result = new int[7];
+		int[] input = {-10, -8, -5, 1, 2, 3, 4, 5};
+		int[] result = new int[8];
 		
 		int low = 0;
 		int high = input.length - 1;
